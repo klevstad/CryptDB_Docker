@@ -2,10 +2,10 @@
 # /etc/init.d/cryptdb
 
 # The following part always gets executed.
-echo "execute /etc/init.d/cryptdb"
+# echo "execute /etc/init.d/cryptdb"
 
 #
-echo export EDBDIR=/opt/cryptdb
+export EDBDIR=/opt/cryptdb
 
 # The following part carries out specific functions depending on arguments. As for now, it only displays the proxy information in the shell. TODO: Logging.
 case "$1" in
@@ -19,7 +19,7 @@ case "$1" in
     kill $(ps aux | grep 'mysql-proxy' | awk '{print $2}')
     ;;
   *)
-    echo "Usage: /etc/init.d/cryptdb {start|stop}"
+    echo "Usage: cryptdb.sh {start|stop}"
     exit 1
     ;;
 esac
