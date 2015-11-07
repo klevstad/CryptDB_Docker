@@ -1,4 +1,4 @@
-# TTM 4501 @ The Norwegian University of Science and Technology
+# TTM 4501 @ Norwegian University of Science and Technology (NTNU)
 
 ##### This project is about investigaing the encryption database CryptDB developed at MIT in 2011.
 
