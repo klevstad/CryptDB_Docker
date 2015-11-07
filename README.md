@@ -16,7 +16,7 @@ Easy.
 
 ##### 3. Build docker image
 
-sudo docker build -t NAME OF IMAGE:VERSION .
+sudo docker build -t NAME_OF_IMAGE:VERSION .
 
 Example: sudo docker build -t cryptdb:v1
 
