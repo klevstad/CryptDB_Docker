@@ -1,6 +1,4 @@
-# TTM 4501 @ Norwegian University of Science and Technology (NTNU)
-
-##### This project is about investigaing the encryption database CryptDB developed at MIT in 2011.
+##### This project is about investigating the encryption database [CryptDB](https://css.csail.mit.edu/cryptdb/) developed at MIT in 2011.
 
 ###### Sourcecode and Dockerfile has been cloned from quickbundle (Bai Xiaoyong)
 
