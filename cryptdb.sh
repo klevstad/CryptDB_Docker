@@ -4,7 +4,7 @@
 # The following part always gets executed.
 echo "execute /etc/init.d/cryptdb"
 
-# The following part carries out specific functions depending on arguments.
+# The following part carries out specific functions depending on arguments. As for now, it only displays the proxy information in the shell. TODO: Logging.
 case "$1" in
   start)
     echo "Starting cryptdb"
