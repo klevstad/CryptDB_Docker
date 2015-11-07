@@ -1,4 +1,4 @@
-# TTM 4501 @ The Norwegian University of Science and Technology
+# TTM 4501 @ Norwegian University of Science and Technology (NTNU)
 
 ##### This project is about investigaing the encryption database CryptDB developed at MIT in 2011.
 
@@ -16,7 +16,7 @@ Easy.
 
 ##### 3. Build docker image
 
-sudo docker build -t NAME OF IMAGE:VERSION .
+sudo docker build -t NAME_OF_IMAGE:VERSION .
 
 Example: sudo docker build -t cryptdb:v1
 
