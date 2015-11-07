@@ -10,9 +10,9 @@ http://docs.docker.com/v1.8/installation/
 
 ###### This setup is for Linux. For OS X install use Docker Toolbox and skip the sudo part of the commands.
 
-##### 2. Clone project and navigate to root
+##### 2. Create a folder, clone project and navigate to root
 
-Easy.
+git clone https://github.com/klevstad/TTM4501-demo.git
 
 ##### 3. Build docker image
 
