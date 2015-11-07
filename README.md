@@ -1,6 +1,6 @@
 ##### This project is about investigating the encryption database [CryptDB](https://css.csail.mit.edu/cryptdb/) developed at MIT in 2011.
 
-###### Sourcecode and Dockerfile has been cloned from quickbundle (Bai Xiaoyong)
+###### Sourcecode and Dockerfile are forked from quickbundle (Bai Xiaoyong)
 
 ## How to setup:
 
