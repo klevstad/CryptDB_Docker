@@ -35,21 +35,21 @@ sudo docker exec -it NAME_OF_CONTAINER bash
 ## How to play around:
 
 
-##### [Terminal 1: Proxy Server] Start the proxy server (enter container first):
+##### [ Terminal 1: Proxy Server ] Start the proxy server (enter container first):
 
 /opt/cryptdb.sh start
 
 (for stopping the proxy server: /opt/cryptdb.sh stop)
 
 
-##### [Terminal 2: MYSQL Client] Query database through proxy server(enter container first):
+##### [ Terminal 2: MYSQL Client ] Query database through proxy server(enter container first):
 
 mysql -u root -pletmein -h 127.0.0.1 -P 3307
 
-###### Create a database, use it, create tables, etc. Observe that the proxy server intercepts the queries and rewrites them. Also, all the data are in plaintext for the logged in user.
+###### Create a database, use it, create tables, etc. Observe that the proxy server intercepts the queries and rewrites them. Also, the data is in plaintext and readable for the logged-in user.
 
 
-##### [Terminal 3: The Snooping Database Administrator] Open the database without going through the proxy server.(enter container first)
+##### [ Terminal 3: The Snooping Database Administrator ] Open the database without going through the proxy server.(enter container first)
 
 mysql -u root -pletmein -h 127.0.0.1
 
