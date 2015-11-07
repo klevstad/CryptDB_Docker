@@ -24,7 +24,7 @@ Example: sudo docker build -t cryptdb:v1
 
 sudo docker run -it -P --name NAME_OF_CONTAINER NAME_OF_IMAGE:VERSION
 
-Example: sudo docker run -it -P --name cryptdb_test cryptdb:v1
+Example: sudo docker run -it -p 3306:3307 --name cryptdb_test cryptdb:v1
 
 ##### 5. For accessing a docker container, use
 
