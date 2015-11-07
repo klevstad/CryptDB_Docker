@@ -31,9 +31,6 @@ WORKDIR /opt/cryptdb
 
 RUN ruby scripts/install.rb .
 
-# Exporting path of CryptDB to environment
-RUN echo "EDBDIR=/opt/cryptdb" >> /etc/environment
-
 # Adding Script
 ADD cryptdb.sh /opt/cryptdb.sh
 RUN chmod 755 /opt/cryptdb.sh; ln -s /opt/cryptdb.sh /usr/bin/cryptdb.sh
@@ -44,10 +41,6 @@ nodaemon=true\n\
 \n\
 [program:mysql]\n\
 command=service mysql start\n\
-\n\
-[program:cryptdb]\n\
-command=/opt/cryptdb.sh start\n\
-environment=EDBDIR=\"/opt/cryptdb\"\n\
 \n\
 " > /etc/supervisor/conf.d/supervisord.conf
 
