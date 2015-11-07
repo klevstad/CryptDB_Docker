@@ -8,6 +8,8 @@
 
 http://docs.docker.com/v1.8/installation/
 
+###### This setup is for Linux. For OS X install use Docker Toolbox and skip the sudo part of the commands.
+
 ##### 2. Clone project and navigate to root
 
 Easy.
