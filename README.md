@@ -4,7 +4,7 @@
 
 ###### Sourcecode and Dockerfile has been cloned from quickbundle (Bai Xiaoyong)
 
-### How to setup:
+## How to setup:
 
 ##### 1. Make sure to have Docker installed
 
@@ -32,7 +32,7 @@ sudo docker exec -it NAME_OF_CONTAINER bash
 
 
 
-# How to play around:
+## How to play around:
 
 
 ##### [Terminal 1: Proxy Server] Start the proxy server (enter container first):
