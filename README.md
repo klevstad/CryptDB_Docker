@@ -1,4 +1,4 @@
-##### This project is about investigating the encryption database [CryptDB](https://css.csail.mit.edu/cryptdb/) developed at MIT in 2011.
+##### This project is about investigating the encrypted database [CryptDB](https://css.csail.mit.edu/cryptdb/) developed at MIT in 2011.
 
 ###### Sourcecode and Dockerfile are forked from quickbundle (Bai Xiaoyong)
 
