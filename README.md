@@ -8,7 +8,7 @@
 
 http://docs.docker.com/v1.8/installation/
 
-###### This setup is for Linux. For OS X install use Docker Toolbox and skip the sudo part of the commands.
+###### This setup is for Linux. For OS X, install Docker Toolbox and skip the sudo part of the commands.
 
 ##### 2. Create a folder, clone project and navigate to folder containing the Dockerfile
 
@@ -19,6 +19,8 @@ git clone https://github.com/klevstad/TTM4501-demo.git
 sudo docker build -t NAME_OF_IMAGE:VERSION .
 
 Example: sudo docker build -t cryptdb:v1
+
+(Open the Docker Quickstart Terminal if OS X)
 
 ##### 4. Run docker container based built image
 
