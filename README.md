@@ -24,7 +24,7 @@ Example: sudo docker build -t cryptdb:v1
 
 sudo docker run -d --name NAME_OF_CONTAINER -p PORT_INN:PORT_OUT -p PORT_INN:PORT_OUT NAME_OF_IMAGE:VERSION
 
-Example: sudo docker run -d --name cryptdb -p 3305:3306 -p 3306:3307 cryptdb:v1
+Example: sudo docker run -d --name cryptdb -p 3306:3306 -p 3307:3307 cryptdb:v1
 
 ##### 5. For accessing a docker container, use
 
