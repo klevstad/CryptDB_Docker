@@ -16,7 +16,7 @@ git clone https://github.com/klevstad/TTM4501-demo.git
 
 ##### 3. Build docker image
 
-sudo docker build -t NAME_OF_IMAGE:VERSION .
+sudo docker build -t **name-of-image**:**version** **.**
 
 Example: sudo docker build -t cryptdb:v1
 
@@ -24,13 +24,15 @@ Example: sudo docker build -t cryptdb:v1
 
 ##### 4. Run docker container based built image
 
-sudo docker run -d --name NAME_OF_CONTAINER -p PORT_IN:PORT_OUT -p PORT_IN:PORT_OUT NAME_OF_IMAGE:VERSION
+sudo docker run -d --name **name-of-container** -p **port-in**:**port-out** -p **port-in**:**port-out** **name-of-image**:**version**
 
 Example: sudo docker run -d --name cryptdb -p 3306:3306 -p 3307:3307 cryptdb:v1
 
 ##### 5. For accessing a docker container, use
 
-sudo docker exec -it NAME_OF_CONTAINER bash
+sudo docker exec -it **name-of-container** bash
+
+Example: sudo docker exec -it cryptdb bash
 
 
 
