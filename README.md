@@ -1,7 +1,5 @@
 ##### This project is about investigating the encrypted database [CryptDB](https://css.csail.mit.edu/cryptdb/) developed at MIT in 2011.
 
-###### Sourcecode and Dockerfile are forked from quickbundle (Bai Xiaoyong)
-
 ## How to setup:
 
 ##### 1. Make sure to have Docker installed
@@ -12,7 +10,7 @@ http://docs.docker.com/v1.8/installation/
 
 ##### 2. Create a folder, clone project and navigate to folder containing the Dockerfile
 
-git clone https://github.com/klevstad/TTM4501-demo.git
+git clone https://github.com/klevstad/CryptDB_Docker.git
 
 ##### 3. Build docker image
 
