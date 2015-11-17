@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Eirik Klevstad # Bai Xiaoyong "lostitle@gmail.com"
+MAINTAINER Eirik Klevstad
 
 # make sure the package repository is up to date
 RUN apt-get update
@@ -22,9 +22,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server
 
 RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
 RUN /usr/sbin/mysqld & sleep 10s && echo "GRANT ALL ON *.* TO root@'%' IDENTIFIED BY 'letmein' WITH GRANT OPTION; FLUSH PRIVILEGES" | mysql -uroot -pletmein
-
-# Add VOLUMEs to allow backup of config and databases
-#VOLUME  ["/var/test", "/var/lib/mysql"]
 
 RUN git clone https://github.com/klevstad/cryptdb.git /opt/cryptdb
 WORKDIR /opt/cryptdb
