@@ -16,7 +16,7 @@ git clone https://github.com/klevstad/CryptDB_Docker.git
 
 sudo docker build -t **name-of-image**:**version** **.**
 
-Example: sudo docker build -t cryptdb:v1
+Example: sudo docker build -t cryptdb:v1 .
 
 (Open the Docker Quickstart Terminal if OS X or Windows)
 
