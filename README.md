@@ -10,7 +10,7 @@ http://docs.docker.com/v1.8/installation/
 
 ##### 2. Create a folder, clone project and navigate to folder containing the Dockerfile
 
-    git clone https://github.com/klevstad/CryptDB_Docker.git
+    git clone https://github.com/agribu/CryptDB_Docker.git
 
 ##### 3. Build docker image
 
