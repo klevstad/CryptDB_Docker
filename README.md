@@ -40,7 +40,7 @@ http://docs.docker.com/v1.8/installation/
     #Example:
     sudo docker exec -it cryptdb bash
 
-## Run via docker exec:
+## CryptDB shell via docker exec:
     #Starting cryptdb shell
     docker exec -it cryptdb cryptdb start
     
