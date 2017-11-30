@@ -72,3 +72,7 @@ http://docs.docker.com/v1.8/installation/
     # default port is 3306
 
 ###### Snoop around in the database. Observe that all the data is encrypted and impossible for you to decrypt.
+
+### Final notes
+
+* This Dockerfile uses Debian wheezy and therefore runs mysql-server version 5.5.
