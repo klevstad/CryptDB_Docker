@@ -18,6 +18,9 @@ http://docs.docker.com/v1.8/installation/
 
     #Example:
     sudo docker build -t cryptdb:v1 .
+    
+    #To build without caching use:
+    sudo docker build --no-cache=true -t cryptdb:v1 .
 
 (Open the Docker Quickstart Terminal if OS X or Windows)
 
