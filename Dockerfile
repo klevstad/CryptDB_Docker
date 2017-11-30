@@ -6,7 +6,8 @@ MAINTAINER Eirik Klevstad
 RUN apt-get update
 
 # Install stuff
-RUN apt-get install -y ca-certificates supervisor sudo ruby git
+RUN apt-get install -y apt-utils
+RUN apt-get install -y ca-certificates supervisor sudo ruby git vim net-tools chkconfig
 
 RUN mkdir -p /var/log/supervisor
 
@@ -30,7 +31,7 @@ RUN ruby scripts/install.rb .
 
 # Adding Script
 ADD cryptdb.sh /opt/cryptdb.sh
-RUN chmod 755 /opt/cryptdb.sh; ln -s /opt/cryptdb.sh /usr/bin/cryptdb.sh
+RUN chmod 755 /opt/cryptdb.sh; ln -s /opt/cryptdb.sh /usr/bin/cryptdb
 
 RUN echo "\
 [supervisord]\n\
@@ -40,6 +41,9 @@ nodaemon=true\n\
 command=service mysql start\n\
 \n\
 " > /etc/supervisor/conf.d/supervisord.conf
+
+ENV EDBDIR /opt/cryptdb
+ENV TERM xterm
 
 CMD ["/usr/bin/supervisord"]
 
