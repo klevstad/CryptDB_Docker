@@ -10,7 +10,7 @@ http://docs.docker.com/v1.8/installation/
 
 ##### 2. Create a folder, clone project and navigate to folder containing the Dockerfile
 
-    git clone https://github.com/klevstad/CryptDB_Docker.git
+    git clone https://github.com/agribu/CryptDB_Docker.git
 
 ##### 3. Build docker image
 
@@ -18,6 +18,9 @@ http://docs.docker.com/v1.8/installation/
 
     #Example:
     sudo docker build -t cryptdb:v1 .
+    
+    #To build without caching use:
+    sudo docker build --no-cache=true -t cryptdb:v1 .
 
 (Open the Docker Quickstart Terminal if OS X or Windows)
 
@@ -37,6 +40,12 @@ http://docs.docker.com/v1.8/installation/
     #Example:
     sudo docker exec -it cryptdb bash
 
+## CryptDB shell via docker exec:
+    #Starting cryptdb shell
+    docker exec -it cryptdb cryptdb start
+    
+    #Stopping cryptdb shell
+    docker exec -it cryptdb cryptdb stop
 
 
 ## How to play around:
@@ -63,3 +72,7 @@ http://docs.docker.com/v1.8/installation/
     # default port is 3306
 
 ###### Snoop around in the database. Observe that all the data is encrypted and impossible for you to decrypt.
+
+### Final notes
+
+* This Dockerfile uses Debian wheezy and therefore runs mysql-server version 5.5.
